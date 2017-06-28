@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jekyllの使い方</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Project Page</a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <h1>Jekyllの使い方</h1>
+  <hr>
+  <h2>Jekyll概要</h2>
+  <hr>
+  <p>
+    <a href="https://jekyllrb-ja.github.io/" target="_blank">Jekyll</a>はHTMLやMarkDown等で書いたテキストにテンプレート機能や変数、繰り返しなど、
+    簡単なプログラム処理を追加してWebサイトHTMLを生成することができるツールです。
+    Jekyllでビルドした結果は通常の静的なHTMLファイルになるので、Webサーバを選ばず利用することが可能です。
+  </p>
+  <h2>Jekyllで処理されるファイルとされないファイル</h2>
+  <p>
+    外部ファイルのincludeや変数、繰り返しといったJekyllの機能を使いたいファイルには <a href="http://jekyllrb-ja.github.io/docs/frontmatter/">Front-matter</a> と呼ばれる特別なブロックをファイル先頭に記述する必要があります。
+    <b>Front-matterのないHTMLファイルにJekyllのテンプレートタグ（Liquidタグ）を書いても動作しない</b>ので、注意しましょう。
+  </p>
+  <p>
+    例えば、このファイル（index.html）の先頭には以下のFront-matterが記述されています。
+  </p>
+  <pre>---
+# この前後3行がないとJekyllがinclude命令等を実行してくれるので消さないように！
+---</pre>
+  <p>
+    このハイフン3つで囲まれた領域がFront-matterで、<b>必ずファイルの1行目に書く必要があります</b>。
+  </p>
+  <hr>
+  <h2>Jekyllを手元で動かす</h2>
+  <p>
+    Jekyllで処理される前提のHTMLは、そのままブラウザで開いてもJekyllのテンプレートが処理されない状態のままなので正しく表示されません。
+    そこで、手元で動作確認するにはJekyllサーバを起動する必要があります。
+    Jekyllのインストール作業が終わっているなら、WebStormの画面下部（Version Controlの右）にある「Terminal」をクリックして出てくるターミナルで以下のコマンドを実行します。
+  </p>
+  <pre>bundle exec jekyll serve</pre>
+  <p>
+    正しくJekyllがインストールされていれば、流れてくる処理結果の中に <code>Server address: http://127.0.0.1:4000/</code>といった表示があると思います。このURLにアクセスすると、ローカルのJekyllサーバにアクセスすることができ、Jekyllで処理された結果のページをブラウザで確認することができます。
+  </p>
+  <hr>
+  <h2>Jekyllで外部ファイルをincludeする</h2>
+  <p>
+    <code>include</code>を使うとHTMLの中に他のHTML部品ファイルを挿入することができます。読み込みたいHTML部品ファイルは <code>_includes</code>フォルダの中に配置することになります。
+    このページでは <code>_includes</code>フォルダ内の <code>header.html</code>をbody開始タグ直後で以下のコードでincludeしています。
+  </p>
+  <pre>{% include header.html %} </pre>
+  <p>
+    <code>header.html</code>も合わせて確認してみると分かりますが、header.htmlは <code>html</code>タグや <code>body</code> タグのない、通常のHTMLに挿入されることが前提の不完全なHTML部品になっています。
+    このように、Jekyllやその他のHTML部品化を行ったWebサイト開発では、単純な1枚もののHTMLページよりは多少複雑な構造となり、Webページの動作確認にJekyllサーバやそれに相当する環境（CGIやPHPサーバ）が必要になります。
+  </p>
+  <p>
+    Jekyllには他にも変数や繰り返しを扱う方法がありますが、この授業では <code>include</code>のみ扱うので他にも興味のある人は <a
+      href="http://jekyllrb-ja.github.io/docs/templates/" target="_blank">公式サイトのテンプレートページ</a>等を眺めて見て下さい。
+  </p>
+</div>
+<div class="container footer">
+  <hr>
+<ul class="list-inline">
+  <li><a href="/">トップページ</a></li>
+  <li><a href="/blog.html">ブログサンプル</a></li>
+</ul>
+
+</div>
+</body>
+</html>

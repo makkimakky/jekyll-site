@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-06-28T13:02:06+09:00</updated><id>http://localhost:4000/</id><title type="html">morimorihoge’s page</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">ふたつめの記事</title><link href="http://localhost:4000/2016/06/27/second.html" rel="alternate" type="text/html" title="ふたつめの記事" /><published>2016-06-27T00:00:00+09:00</published><updated>2016-06-27T00:00:00+09:00</updated><id>http://localhost:4000/2016/06/27/second</id><content type="html" xml:base="http://localhost:4000/2016/06/27/second.html">&lt;h2&gt;ふたつめの記事&lt;/h2&gt;
+&lt;p&gt;
+  この記事は &lt;code&gt;/_posts/2016-06-27-second.html&lt;/code&gt; に記述されています。
+&lt;/p&gt;
+&lt;p&gt;
+  部品化したコンテンツHTMLはただのHTMLとして書けるので、Twitter埋め込み等のコンテンツも特に気にせず使うことができる。
+&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;Jekyll、そこまでがんばって使ったことなかったけどGitHub Pages使うとサーバ側でbuildまでしてくれるしちょっとした個人ポートフォリオサイトとかならもうこれでいいよなと思った。custom domain hostingもできるので有能&lt;/p&gt;&amp;mdash; Masato Mori (@morimorihoge) &lt;a href=&quot;https://twitter.com/morimorihoge/status/879896723321114624&quot;&gt;2017年6月28日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">ふたつめの記事 この記事は /_posts/2016-06-27-second.html に記述されています。 部品化したコンテンツHTMLはただのHTMLとして書けるので、Twitter埋め込み等のコンテンツも特に気にせず使うことができる。 Jekyll、そこまでがんばって使ったことなかったけどGitHub Pages使うとサーバ側でbuildまでしてくれるしちょっとした個人ポートフォリオサイトとかならもうこれでいいよなと思った。custom domain hostingもできるので有能&amp;mdash; Masato Mori (@morimorihoge) 2017年6月28日</summary></entry><entry><title type="html">ひとつめの記事</title><link href="http://localhost:4000/2016/06/26/first.html" rel="alternate" type="text/html" title="ひとつめの記事" /><published>2016-06-26T00:00:00+09:00</published><updated>2016-06-26T00:00:00+09:00</updated><id>http://localhost:4000/2016/06/26/first</id><content type="html" xml:base="http://localhost:4000/2016/06/26/first.html">&lt;h2&gt;ひとつめの記事&lt;/h2&gt;
+&lt;p&gt;
+  この記事は &lt;code&gt;/_posts/2016-06-26-first.html&lt;/code&gt; に記述されています。
+&lt;/p&gt;
+&lt;p&gt;
+  当該HTMLを見てもらうと分かりますが、このHTMLファイルはFront-Matter（ファイル先頭部分の &lt;code&gt;---&lt;/code&gt;で囲まれた部分）にレイアウトファイルとページタイトルの設定がある以外はコンテンツ部のみを含んだ部分HTMLファイルとなっています。
+  最初に雛形を作るときに設定の必要はありますが、雛形さえ作れば次からはこのファイルをベースに作成していけるので、運用の手間を減らすことができます。
+&lt;/p&gt;</content><author><name></name></author><summary type="html">ひとつめの記事 この記事は /_posts/2016-06-26-first.html に記述されています。 当該HTMLを見てもらうと分かりますが、このHTMLファイルはFront-Matter（ファイル先頭部分の ---で囲まれた部分）にレイアウトファイルとページタイトルの設定がある以外はコンテンツ部のみを含んだ部分HTMLファイルとなっています。 最初に雛形を作るときに設定の必要はありますが、雛形さえ作れば次からはこのファイルをベースに作成していけるので、運用の手間を減らすことができます。</summary></entry></feed>
