@@ -1,30 +1,33 @@
+---
+# この前後3行がないとJekyllがinclude命令等を実行してくれるので消さないように！
+---
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ポートフォリオ、的な</title>
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/animate.css">
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/iroiro.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>自己紹介</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="script/iroiro.js"></script>
+  <!-- コンパイルして圧縮された最新版の CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- オプションのテーマ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- コンパイルして圧縮された最新版の JavaScript -->
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-  <div id="sidebar">
-    <img src="../img/title_rogo.png" alt="">
-    <p class="sidebar_p">末期とはなんなのか、です。</p>
-    <ul id="menu">
-      <h2>MENU</h2>
-      <li class="menubar"><a href="top.html">トップ</a></li>
-      <li class="menubar"><a href="about.html">自分について</a></li>
-      <li class="menubar"><a href="works.html">作品</a></li>
-      <li class="menubar"><a href="otoiawase.html">お問い合わせ</a></li>
-    </ul>
-    <p class="sidebar_p">CopyLight © MAKKI PORTFOLIO</p>
-  </div>
+<div id="sidebar">
+{% include menubar.html %}
+</div>
   <div id="content">
     <h1><span>自分について</span></h1>
     <h2>自己紹介</h2>
-    <img class="article_img animated zoomInUp face-animation" src="../img/MK_face.jpg" alt="">
+    <img class="article_img animated zoomInUp face-animation" src="img/MK_face.jpg" alt="">
     <br>
     <p>こんにちは。</p>
     <br>

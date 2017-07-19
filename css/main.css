@@ -1,0 +1,178 @@
+
+/*全体のやつ*/
+body{
+  background-color: #E0E0E0;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+}
+
+a{
+  text-decoration: none;
+}
+
+.article_img{
+  width: 65%;
+  text-align: center;
+}
+
+/*リンク用*/
+.link_dekoC{
+  text-decoration: none;
+}
+
+/*メニュー*/
+#sidebar{
+  float:left;
+  width: 30%;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+#sidebar img{
+  width: 100%;
+  /*border: solid 1px;*/
+}
+
+#menu{
+  padding: 10px;
+}
+
+.sidebar_p{
+  margin-left: 10px;
+}
+
+.menubar{
+  list-style: none;
+  border-left: solid 5px #333333;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: #FFFFFF;
+  box-shadow:2px 2px 10px -2px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.menubar:hover{
+margin-left: 20px;
+margin-right: -20px;
+}
+
+
+
+
+/*コンテンツ部分*/
+
+#content{
+  display: none;
+  background: #FFFFFF;
+  float:left;
+  width: 60%;
+  height: 100%;
+  top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #CCCCCC;
+  /*animation-name: ;*/
+  animation-duration: 2s;
+  background-color: #FFFFFF;
+  box-shadow:2px 2px 10px -2px;
+}
+
+/*本文装飾*/
+h1 {
+	overflow: hidden;
+	text-align: center;
+}
+
+h1 span {
+	position: relative;
+	display: inline-block;
+	margin: 0 2.5em;
+	padding: 0 1em;
+	text-align: left;
+}
+
+h1 span::before,
+h1 span::after {
+	position: absolute;
+	top: 50%;
+	content: '';
+	width: 400%;
+	height: 1px;
+	background-color: #ccc;
+}
+
+h1 span::before {
+	right: 100%;
+}
+h1 span::after {
+	left: 100%;
+}
+
+
+h2 {
+  padding: 10px;
+  background: #E8E8E8;
+	border-top: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+h3{
+  border-left: solid 3px #2FCDB4;
+  padding-left: 10px;
+}
+
+/*作品集*/
+/*.sakuhin{
+  margin: 20px;
+  overflow: hidden;
+}*/
+
+figure {
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 195px;
+  height: 265px;
+  background: rgba(255,255,255,.6);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+.works:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.img-samune{
+  width: 30%;
+  height: 30%;
+}
+
+.works-img{
+  width: 40%;
+}
+
+
+/*自己紹介*/
+.face-animation{
+  -webkit-animation-duration: 1.5s;
+  animation-delay:1.5s;
+}

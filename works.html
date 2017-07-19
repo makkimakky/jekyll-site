@@ -1,0 +1,73 @@
+---
+# この前後3行がないとJekyllがinclude命令等を実行してくれるので消さないように！
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>自己紹介</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script src="script/iroiro.js"></script>
+  <!-- コンパイルして圧縮された最新版の CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- オプションのテーマ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- コンパイルして圧縮された最新版の JavaScript -->
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="sidebar">
+  {% include menubar.html %}
+</div>
+<div id="content">
+  <h1><span>作品</span></h1>
+  <h2>作品一覧</h2>
+  <div class="works">
+    <figure>
+      <img class="sakuhin" src="img/WCG_samune.jpg" width="195" height="265" alt="">
+      <a class="link-dekoC" href="WC_Graphics.html">
+        <figcaption>
+          <h3>Wim Crouwel graphics</h3>
+          <p>授業で作成したもの</p>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <img class="sakuhin" src="img/pu_labo_samune.jpg" width="195" height="265" alt="">
+      <a class="link-dekoC" href="pu_rabo.html">
+        <figcaption>
+          <h3>ぷ。印ラボラトリィ</h3>
+          <p>趣味で作成した趣味のブログ</p>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <img class="sakuhin" src="img/port_rogo_samune.jpg" width="195" height="265" alt="">
+      <a class="link-dekoC" href="port_rogo.html">
+        <figcaption>
+          <h3>MAKKI PORTFOLIO</h3>
+          <p>当サイトのロゴ</p>
+        </figcaption>
+      </a>
+    </figure>
+  </div>
+  <h2 class="clear_yobi">その他</h2>
+  <h3>写真</h3>
+  <p>サークル活動等で撮影した写真です。</p>
+  <a href="../img/picture/_DSC0263.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC0263.JPG" alt=""></a>
+  <a href="../img/picture/_DSC1223.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC1223.JPG" alt=""></a>
+  <a href="../img/picture/_DSC8894.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC8894.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9057.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9057.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9081.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9081.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9175.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9175.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9194.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9194.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9857.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9857.JPG" alt=""></a>
+  <a href="../img/picture/_DSC9981.JPG" data-lightbox="image"><img class="img-samune" src="../img/picture/_DSC9981.JPG" alt=""></a>
+</div>
+</body>
+</html>
